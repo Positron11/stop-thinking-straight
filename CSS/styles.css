@@ -5,7 +5,7 @@ html, body {
 	padding: 0;
 	color: #222;
 	font-size: 22px;
-	font-weight: 400;
+	font-weight: 700;
 	font-family: 'Amatic SC', cursive;
 }
 
@@ -39,6 +39,7 @@ a {
 
 #banner {
 	font-size: 2em;
+	font-weight: 400;
 	font-family: 'Dancing Script', cursive;
 }
 
@@ -47,7 +48,6 @@ a {
 }
 
 #straight span {
-	font-weight: 400;
 	display: inline-block;
 	font-family: 'Amatic SC', cursive;
 	transition-timing-function: cubic-bezier(.84,.09,.58,1.4);
