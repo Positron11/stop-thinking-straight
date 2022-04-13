@@ -1,0 +1,148 @@
+/* GLOBAL */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	color: #222;
+	font-size: 22px;
+	font-weight: 400;
+	font-family: 'Amatic SC', cursive;
+}
+
+a {
+	color: #7eb7cd;
+}
+
+
+/* PAGE */
+
+#page {
+	margin: auto;
+	padding: 1em 2em;
+	max-width: 1000px;
+	transition: padding 0.3s ease;
+}
+
+
+/* NAVBAR */
+
+#navbar_container {
+	text-align: center;
+}
+
+#navbar {
+	display: flex;
+	padding: 2em 0;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+#banner {
+	font-size: 2em;
+	font-family: 'Dancing Script', cursive;
+}
+
+#straight {
+	display: inline-block;
+}
+
+#straight span {
+	font-weight: 400;
+	display: inline-block;
+	font-family: 'Amatic SC', cursive;
+	transition-timing-function: cubic-bezier(.84,.09,.58,1.4);
+	transition-property: transform;
+}
+
+#straight span:not(:first-child) {
+	margin-left: -0.26em;
+}
+
+#straight span:nth-child(1) {transition-duration: 0.15s;}
+#straight span:nth-child(2) {transition-duration: 0.18s;}
+#straight span:nth-child(3) {transition-duration: 0.21s;}
+#straight span:nth-child(4) {transition-duration: 0.24s;}
+#straight span:nth-child(5) {transition-duration: 0.27s;}
+#straight span:nth-child(6) {transition-duration: 0.3s;}
+#straight span:nth-child(7) {transition-duration: 0.33s;}
+#straight span:nth-child(8) {transition-duration: 0.36s;}
+
+#nav_links_container {
+	display: flex;
+	column-gap: 1.5em;
+}
+
+#nav_links_container a {
+	color: inherit;
+	margin-bottom: 0.3em;
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+#nav_links_container a:hover {
+	color: #aaa;
+}
+
+
+/* HERO */
+
+#hero {
+	width: 100%;
+	display: flex;
+	overflow: hidden;
+	margin-bottom: 2em;
+	border-radius: 0.5em;
+	background-size: 30%;
+	box-sizing: border-box;
+	padding: 1em 1em 0 1em;
+	justify-content: space-around;
+	background-image: url("../Assets/Images/background.png");
+}
+
+#hero img {
+	width: 25%;
+	max-width: 200px;
+	display: inline-block;
+	transition: 0.2s ease;
+}
+
+
+/* DEVICES */
+
+@media (pointer:fine) {
+	#hero img:hover {
+		transform: scale(1.07);
+	}
+	#navbar:hover #straight span {
+		transform: rotate(20deg) translate(0.1em, 0.01em);
+	}
+}
+
+
+/* BREAKPOINTS */
+
+@media only screen and (max-width: 730px) {
+	#navbar {
+		row-gap: 0.5em;
+		padding: 1.5em 0;
+		align-items: center;
+		display: inline-flex;
+		flex-direction: column;
+	}
+	#nav_links_container {
+		width: 100%;
+		justify-content: space-around;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	#page {
+		padding: 1em;
+	}
+	#navbar {
+		font-size: 4.9vw;
+	}
+	#hero {
+		padding: 0.5em 0.5em 0 0.5em;
+	}
+}
