@@ -94,7 +94,7 @@ a {
 	background-size: 30%;
 	box-sizing: border-box;
 	padding: 1.5em 1em 0 1em;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	background-image: url("../Assets/Images/background.png");
 }
 
