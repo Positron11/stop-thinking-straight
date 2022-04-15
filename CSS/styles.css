@@ -47,6 +47,10 @@ a {
 	transition: padding 0.3s ease;
 }
 
+#content {
+	margin-bottom: 3em;
+}
+
 
 /* NAVBAR */
 
@@ -60,7 +64,7 @@ a {
 	justify-content: space-between;
 }
 
-#banner {
+#nav_banner {
 	font-size: 2em;
 	font-weight: 400;
 	font-family: 'Dancing Script', cursive;
@@ -191,6 +195,30 @@ a {
 }
 
 
+/* FOOTER */
+
+#footer {
+	row-gap: 0.7em;
+	display: flex;
+	padding: 1.5em 2em;
+	margin-bottom: 2em;
+	text-align: center;
+	border-radius: 1em;
+	align-items: center;
+	flex-direction: column;
+	background-color: #efefef;
+	justify-content: space-between;
+}
+
+#footer_banner {
+	font-size: 1.2em;
+}
+
+#footer_credits {
+	font-size: 0.9em;
+}
+
+
 /* DEVICES */
 
 @media (pointer:fine) {
@@ -238,6 +266,14 @@ a {
 		display: inline-flex;
 		flex-direction: column;
 	}
+	#content {
+		margin-bottom: 2.5em;
+	}
+	#footer {
+		row-gap: 0.5em;
+		padding: 1.5em;
+		font-size: 0.9em;
+	}
 	#nav_links_container {
 		width: 90%;
 		justify-content: space-evenly;
@@ -254,7 +290,7 @@ a {
 	#navbar {
 		padding: 1.8em 0;
 	}
-	#banner {
+	#nav_banner {
 		font-size: 10vw;
 	}
 	#hero {

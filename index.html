@@ -46,7 +46,7 @@
 		<div id="navbar_container">
 			<div id="navbar">
 				<!-- Banner -->
-				<div id="banner">
+				<div id="nav_banner">
 					<!-- Basic text -->
 					Stop Thinking
 					
@@ -84,10 +84,19 @@
 				</div>
 			</div>
 		</div>
-	</div>
 
+		<!-- Footer -->
+		<div id="footer">
+			<div id="footer_banner">Stop Thinking Straight © <span id="footer_date"></span></div>
+			<div id="footer_credits">
+				Podcast by Mridni, Amy, Savannah, and Siri. Website by Zhaddy.
+				<a href="https://github.com/Positron11/stop-thinking-straight/">Github</a>
+			</div>
+		</div>
+	</div>
+	
 	<!-- Scripts -->
-	<script src="JS/scripts.js"></script>
+	<script>document.getElementById("footer_date").innerHTML = new Date().getFullYear();</script>
 </body>
 
 </html>
