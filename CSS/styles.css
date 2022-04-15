@@ -18,8 +18,9 @@ a {
 
 #page {
 	margin: auto;
-	padding: 1em 2em;
+	padding: 0 2em;
 	max-width: 1000px;
+	box-sizing: border-box;
 	transition: padding 0.3s ease;
 }
 
@@ -29,10 +30,9 @@ a {
 #navbar_container {
 	text-align: center;
 }
-
 #navbar {
 	display: flex;
-	padding: 2em 0;
+	padding: 3em 0;
 	align-items: flex-end;
 	justify-content: space-between;
 }
@@ -42,11 +42,6 @@ a {
 	font-weight: 400;
 	font-family: 'Dancing Script', cursive;
 }
-
-#straight {
-	display: inline-block;
-}
-
 #straight span {
 	display: inline-block;
 	font-family: 'Amatic SC', cursive;
