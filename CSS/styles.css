@@ -60,6 +60,7 @@ a {
 #navbar {
 	display: flex;
 	padding: 3em 0;
+	user-select: none;
 	align-items: flex-end;
 	justify-content: space-between;
 }
