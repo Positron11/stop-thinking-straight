@@ -245,11 +245,14 @@ a {
 	#page {
 		padding: 1.5em;
 	}
+	#navbar {
+		padding: 1.8em 0;
+	}
 	#banner {
 		font-size: 10vw;
 	}
 	#hero {
-		padding: 0.5em 0.5em 0 0.5em;
+		padding: 2em 0.5em 0 0.5em;
 	}
 	#hero_container {
 		padding: 0.5em;
