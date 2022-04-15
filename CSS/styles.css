@@ -4,7 +4,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 	color: #222;
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 700;
 	font-family: 'Amatic SC', cursive;
 }
@@ -90,7 +90,6 @@ a {
 	width: 100%;
 	display: flex;
 	overflow: hidden;
-	margin-bottom: 2em;
 	border-radius: 0.5em;
 	background-size: 30%;
 	box-sizing: border-box;
@@ -135,12 +134,15 @@ a {
 	}
 }
 
-@media only screen and (max-width: 450px) {
-	#page {
-		padding: 1em;
+@media only screen and (max-width: 440px) {
+	body {
+		font-size: 18px;
 	}
-	#navbar {
-		font-size: 4.9vw;
+	#page {
+		padding: 1.5em;
+	}
+	#banner {
+		font-size: 10vw;
 	}
 	#hero {
 		padding: 0.5em 0.5em 0 0.5em;
