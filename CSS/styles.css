@@ -81,6 +81,11 @@ a {
 
 /* HERO */
 
+#hero_container {
+	padding: 1em;
+	border-radius: 1em;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
 #hero {
 	width: 100%;
 	display: flex;
@@ -92,7 +97,6 @@ a {
 	justify-content: space-evenly;
 	background-image: url("../Assets/Images/background.png");
 }
-
 #hero img {
 	width: 25%;
 	max-width: 180px;
@@ -141,5 +145,8 @@ a {
 	}
 	#hero {
 		padding: 0.5em 0.5em 0 0.5em;
+	}
+	#hero_container {
+		padding: 0.5em;
 	}
 }
