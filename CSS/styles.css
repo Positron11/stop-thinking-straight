@@ -13,6 +13,9 @@ a {
 	color: #7eb7cd;
 }
 
+audio {
+	border-radius: 0.5em;
+}
 
 /* GENERAL */
 
@@ -24,7 +27,13 @@ a {
 .heading {
 	font-size: 3em;
 	font-weight: 400;
-	text-align: right;
+	margin-bottom: 0.5em;
+	font-family: 'Dancing Script', cursive;
+}
+
+.sub-heading {
+	font-size: 2em;
+	font-weight: 400;
 	margin-bottom: 0.5em;
 	font-family: 'Dancing Script', cursive;
 }
@@ -34,6 +43,13 @@ a {
 	border-radius: 1em;
 	background-color: white;
 	box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.header-card {
+	padding: 1em 2em;
+	border-radius: 1em;
+	margin-bottom: 3em;
+	background-color: rgba(0,0,0,0.03);
 }
 
 
@@ -49,6 +65,9 @@ a {
 
 #content {
 	margin-bottom: 3em;
+}
+#content>*:not(:last-child) {
+	margin-bottom: 2em;
 }
 
 
@@ -152,9 +171,6 @@ a {
 		"profile-image profile-bio"
 		/ auto 1fr;
 }
-.profile-card:not(:last-child) {
-	margin-bottom: 2em;
-}
 
 .profile-card .profile-image-container {
 	width: 150px;
@@ -207,8 +223,8 @@ a {
 	border-radius: 1em;
 	align-items: center;
 	flex-direction: column;
-	background-color: #efefef;
 	justify-content: space-between;
+	background-color: rgba(0,0,0,0.03);
 }
 
 #footer_banner {
@@ -267,7 +283,7 @@ a {
 		display: inline-flex;
 		flex-direction: column;
 	}
-	#content {
+	.header-card, #content {
 		margin-bottom: 2.5em;
 	}
 	#footer {
@@ -299,5 +315,8 @@ a {
 	}
 	#hero_container {
 		padding: 0.5em;
+	}
+	.header-card {
+		padding: 1.5em 1.5em 0.5em 1.5em;
 	}
 }
