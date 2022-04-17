@@ -39,10 +39,31 @@ audio {
 }
 
 .card {
-	padding: 1em;
+	padding: 1.5em 2em;
 	border-radius: 1em;
 	background-color: white;
 	box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.card.bordered {
+	box-shadow: none;
+	position: relative;
+	margin-left: 0.5em;
+}
+
+.card.bordered::before {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	content: "";
+	z-index: -1;
+	left: -0.5em;
+	position: absolute;
+	border-radius: 1em;
+	background-size: 8em;
+	background-position: bottom;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+	background-image: url("../Assets/Images/background_rotated.png");
 }
 
 .header-card {
@@ -159,9 +180,17 @@ audio {
 }
 
 
+/* PAGE INTRO */
+
+#page_intro {
+	text-align: center;
+}
+
+
 /* ABOUT US */
 
 .profile-card {
+	padding: 1em;
 	display: grid;
 	row-gap: 0.5em;
 	column-gap: 1em;
@@ -245,10 +274,6 @@ audio {
 	#navbar:hover #straight span {
 		transform: rotate(20deg) translate(0.1em, 0.01em);
 	}
-	.profile-card:hover {
-		transform: scale(1.01);
-		box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-	}
 }
 
 
@@ -301,8 +326,14 @@ audio {
 	body {
 		font-size: 18px;
 	}
-	#page {
+	.card {
 		padding: 1.5em;
+	}
+	.header-card {
+		padding: 1.5em 1.5em 0.5em 1.5em;
+	}
+	#page {
+		padding: 1.5em 1.5em 0 1.5em;
 	}
 	#navbar {
 		padding: 1.8em 0;
@@ -315,8 +346,5 @@ audio {
 	}
 	#hero_container {
 		padding: 0.5em;
-	}
-	.header-card {
-		padding: 1.5em 1.5em 0.5em 1.5em;
 	}
 }
