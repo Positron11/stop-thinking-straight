@@ -110,7 +110,9 @@ audio {
 
 #nav_banner {
 	font-size: 2em;
+	color: inherit;
 	font-weight: 400;
+	text-decoration: none;
 	font-family: 'Dancing Script', cursive;
 }
 #straight span {
