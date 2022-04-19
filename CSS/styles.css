@@ -173,13 +173,35 @@ audio {
 	background-image: url("../Assets/Images/background.png");
 }
 
-#hero a {
+#hero .bust {
 	cursor: pointer;
 	max-width: 180px;
-	margin-bottom: -7px;
+	margin-bottom: -5px;
 	transition: transform 0.2s ease-out;
 }
-#hero a img {
+#hero .bust a {
+	display: block;
+	position: relative;
+	transition: transform 0.2s ease-out;
+}
+#hero .bust a::after {
+	position: absolute;
+	content: attr(data-name);
+	color: #222;
+	font-size: 0.9em;
+	padding: 0.2em 0.5em;
+	border-radius: 0.5em;
+	background-color: white;
+	bottom: 1em;
+	left: 50%;
+	opacity: 0;
+	box-shadow: rgba(17, 17, 26, 0.3) 0px 0px 10px;
+	transform: translate(-50%);
+	z-index: 100;
+	transition: 0.2s ease;
+}
+
+#hero .bust a img {
 	width: 100%;
 }
 
@@ -282,15 +304,19 @@ audio {
 /* DEVICES */
 
 @media (pointer:fine) {
-	#hero a:hover {transform: scale(1.08);}
+	#hero .bust:hover a::after {opacity: 1;}
+	#hero .bust a:hover {transform: scale(1.08);}
 	#nav_links_container a:hover {color: #aaa;}
 	#hero:hover #bust_savannah {transform: translateX(26%);}
 	#hero:hover #bust_mridani {transform: translateX(-26%);}
 	#hero:hover #bust_aarush {transform: translate(-50%, 0);}
-	#bust_savannah:hover {transform: translateX(26%) scale(1.08) !important;}
-	#bust_mridani:hover {transform: translateX(-26%) scale(1.08) !important;}
-	#bust_aarush:hover {transform: translate(-50%, 0) scale(1.08) !important;}
 	#navbar:hover #straight span {transform: rotate(20deg) translate(0.1em, 0.01em);}
+}
+
+@media (pointer:coarse) {
+	#hero .bust a::after {
+		opacity: 1;
+	}
 }
 
 
@@ -318,6 +344,9 @@ audio {
 }
 
 @media only screen and (max-width: 730px) {
+	.header-card, #content {
+		margin-bottom: 2.5em;
+	}
 	#navbar {
 		row-gap: 0.8em;
 		padding: 2.5em 0;
@@ -325,20 +354,20 @@ audio {
 		display: inline-flex;
 		flex-direction: column;
 	}
-	.header-card, #content {
-		margin-bottom: 2.5em;
-	}
-	#footer {
-		row-gap: 0.5em;
-		padding: 1.5em;
-		font-size: 0.9em;
-	}
 	#nav_links_container {
 		width: 90%;
 		justify-content: space-evenly;
 	}
 	#hero_container {
 		padding: 0.5em;
+	}
+	#hero .bust a::after {
+		font-size: 0.8em;
+	}
+	#footer {
+		row-gap: 0.5em;
+		padding: 1.5em;
+		font-size: 0.9em;
 	}
 }
 
