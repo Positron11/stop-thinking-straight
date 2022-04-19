@@ -285,6 +285,7 @@ audio {
 
 @media (pointer:fine) {
 	#hero a:hover {transform: scale(1.08);}
+	#nav_links_container a:hover {color: #aaa;}
 	#hero:hover #bust_savannah {transform: translateX(26%);}
 	#hero:hover #bust_mridani {transform: translateX(-26%);}
 	#hero:hover #bust_aarush {transform: translate(-50%, 0);}
@@ -298,9 +299,6 @@ audio {
 /* BREAKPOINTS */
 
 @media only screen and (max-width: 900px) {
-	#nav_links_container a:hover {
-		color: #aaa;
-	}
 	.profile-card {
 		row-gap: 0.7em;
 		align-items: flex-end;
