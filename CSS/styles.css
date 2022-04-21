@@ -185,20 +185,20 @@ audio {
 	transition: transform 0.2s ease-out;
 }
 #hero .bust a::after {
-	position: absolute;
-	content: attr(data-name);
-	color: #222;
-	font-size: 0.9em;
-	padding: 0.2em 0.5em;
-	border-radius: 0.5em;
-	background-color: white;
-	bottom: 1em;
 	left: 50%;
 	opacity: 0;
-	box-shadow: rgba(17, 17, 26, 0.3) 0px 0px 10px;
-	transform: translate(-50%);
+	bottom: 1em;
 	z-index: 100;
+	color: #222;
+	font-size: 0.9em;
+	position: absolute;
+	padding: 0.2em 0.5em;
+	border-radius: 0.5em;
 	transition: 0.2s ease;
+	content: attr(data-name);
+	background-color: white;
+	transform: translate(-50%);
+	box-shadow: rgba(17, 17, 26, 0.3) 0px 0px 10px;
 }
 
 #hero .bust a img {
@@ -208,7 +208,7 @@ audio {
 #bust_savannah, #bust_mridani {z-index: 2;}
 #bust_aarush {
 	left: 50%;
-	bottom: 0;
+	bottom: -3px;
 	z-index: 3;
 	width: 22%;
 	position: absolute;
